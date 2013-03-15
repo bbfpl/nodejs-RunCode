@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content=""> 
+    <!-- Le styles --> 
+    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">  
+    <link href="/stylesheets/jquery.notice.css" rel="stylesheet">
+    <link href="/javascripts/code/lib/codemirror.css" rel="stylesheet"> 
+    <link href="/javascripts/code/theme/ambiance.css" rel="stylesheet"> 
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/javascripts/html5shiv.js"></script>
+    <![endif]--> 
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png"> 
+    <script src="/javascripts/code/lib/codemirror.js"></script>
+    <script src="/javascripts/code/mode/xml/xml.js"></script>
+    <script src="/javascripts/code/mode/javascript/javascript.js"></script>
+    <script src="/javascripts/code/mode/css/css.js"></script>
+    <script src="/javascripts/code/mode/htmlmixed/htmlmixed.js"></script>
+  </head>
+  <body  class="Theme"> 
+  	<div id="wrap" class="code_wrap"> 
+	<section class="main_container">  
+     		<div id="header">
+     			<div class="headerMenu">
+     			<div class="menuItem">
+     				<a href="#" class="btn btn-info">保存</a>
+     				<a href="#" class="btn btn-info">发布</a>
+     			</div>
+     			<ul class="toolBar">
+     				<li><a href="#">Ajax 框架</a>
+					<ul>
+					    <li class="lib_name" title="jquery">jQuery</li>
+					    <li id="jquery_183" title="jQuery 1.8.3">jQuery 1.8.3</li>
+					    <li id="jquery_182" title="jQuery 1.8.2">jQuery 1.8.2</li>
+					    <li id="jquery_180" title="jQuery 1.8.0">jQuery 1.8.0</li>
+					    <li id="jquery_172" title="jQuery 1.7.2">jQuery 1.7.2</li>
+					    <li id="jquery_164" title="jQuery 1.6.4">jQuery 1.6.4</li>
+					    <li id="jquery_151" title="jQuery 1.5.1">jQuery 1.5.1</li>
+					    <li id="jquery_144" title="jQuery 1.4.4">jQuery 1.4.4</li>
+					    <li class="lib_name" title="dojo">Dojo</li>
+					    <li id="dojo_181" title="Dojo 1.8.1">Dojo 1.8.1</li>
+					    <li id="dojo_180" title="Dojo 1.8.0">Dojo 1.8.0</li>
+					    <li id="dojo_160" title="Dojo 1.6.0">Dojo 1.6.0</li>
+					    <li id="dojo_141" title="Dojo 1.4.1">Dojo 1.4.1</li>
+					    <li class="lib_name" title="mootools">MooTools</li>
+					    <li id="mootools_145" title="Mootools 1.4.5">Mootools 1.4.5</li>
+					    <li id="mootools_125" title="Mootools 1.2.5">Mootools 1.2.5</li>
+					    <li class="lib_name" title="prototype">Prototype</li>
+					    <li id="prototype_1710" title="Prototype 1.7.1.0">Prototype 1.7.1.0</li>
+					    <li id="prototype_1700" title="Prototype 1.7.0.0">Prototype 1.7.0.0</li>
+					    <li id="prototype_1610" title="Prototype 1.6.1.0">Prototype 1.6.1.0</li>
+					</ul>
+     				</li>
+     				<li><a href="#">移动开发框架</a>
+					<ul>
+						<li id="others_sencha_touch_2011" title="Sencha Touch 2.0.1.1">Sencha Touch 2.0.1.1</li>
+						<li id="others_zepto_10rc1" title="Zepto 1.0rc1">Zepto 1.0rc1</li>
+						<li class="lib_name" title="jquerymobile">jQuery Mobile</li>
+						<li id="jquerymobile_120" title="jQuery Mobile 1.2.0">jQuery Mobile 1.2.0</li>
+						<li id="jquerymobile_111" title="jQuery Mobile 1.1.1">jQuery Mobile 1.1.1</li>
+						<li id="jquerymobile_101" title="jQuery Mobile 1.0.1">jQuery Mobile 1.0.1</li>
+						<li class="lib_name" title="jqmobi">jqMobi</li>
+						<li id="jqmobi_min" title="jqMobi.min.js">jqMobi.min.js</li>
+						<li id="jqmobi1_ui" title="jq.ui.min.js">jq.ui.min.js</li>
+						<li id="jqmobi2_ui" title="jq.popup.js">jq.popup.js</li>
+					</ul>
+     				</li> 
+     				<li><a href="#">UI 框架</a>
+					<ul>
+						<li id="others_extjs_411a" title="ExtJS 4.1.1a">ExtJS 4.1.1a</li>
+						<li id="others_jquery_easyui_131" title="jQuery easy UI 1.3.1">jQuery easy UI 1.3.1</li>
+						<li id="others_dwzui_144" title="DWZ UI 1.4.4">DWZ UI 1.4.4</li>
+						<li class="lib_name" title="bootstrap">Bootstrap</li>
+						<li id="bootstrap_221" title="Bootstrap v2.2.1">Bootstrap v2.2.1</li>
+						<li class="lib_name" title="jqueryui">jQuery UI</li>
+						<li id="jqueryui_191" title="jQuery UI 1.9.1">jQuery UI 1.9.1</li>
+						<li class="lib_name" title="yui">YUI</li>
+						<li id="yui_330" title="YUI 3.3.0">YUI 3.3.0</li>
+						<li id="yui_282" title="YUI 2.8.2">YUI 2.8.2</li>
+					</ul>
+     				</li>
+     				<li><a href="#">jQuery 插件</a>
+					<ul>
+						<li id="jqueryplugins1_jquery_cookie_13" title="jQuery cookie">jQuery cookie</li>
+						<li id="jqueryplugins2_jqueryform_282" title="jQuery forms 2.8.2">jQuery forms 2.8.2</li>
+						<li id="jqueryplugins3_jquery_cookies_220" title="jQuery cookies 2.2.0">jQuery cookies 2.2.0</li>
+						<li id="jqueryplugins4_jquery_validity_120" title="jQuery validity 1.2.0">jQuery validity 1.2.0</li>
+						<li id="jqueryplugins5_jquery_uploadify_32" title="jQuery uploadify 3.2">jQuery uploadify 3.2</li>
+						<li id="jqueryplugins6_jquery_jqgrid_441" title="jQuery jqGrid 4.4.1">jQuery jqGrid 4.4.1</li>
+						<li id="jqueryplugins7_jquery_colorbox_132" title="jQuery ColorBox 1.3.2">jQuery ColorBox 1.3.2</li>
+						<li id="jqueryplugins8_fancybox_213" title="jQuery fancyBox 2.1.3">jQuery fancyBox 2.1.3</li>
+						<li id="jqueryplugins9_jquery_rotate_22" title="jQuery Rotate 2.2">jQuery Rotate 2.2</li>
+					</ul> 
+     				</li> 
+     				<li><a href="#">HTML5 相关</a>
+					<ul>
+						<li id="others_processing_141" title="Processing 1.4.1">Processing 1.4.1</li>
+						<li id="others_es5_shim_124" title="ES5 shim 1.2.4">ES5 shim 1.2.4</li>
+						<li id="others_jquery_html5_uploader" title="jQuery HTML5 Uploader">jQuery HTML5 Uploader</li>
+						<li id="others_jcanvascript_1518" title="jCanvaScript-1.5.18">jCanvaScript-1.5.18</li>
+						<li id="others_canvastext_041" title="CanvasText-0.4.1">CanvasText-0.4.1</li>
+					</ul>
+     				</li>
+     				<li><a href="#">工具库</a>
+					<ul>
+						<li id="others_underscore_133" title="underscore 1.3.3">underscore 1.3.3</li>
+						<li id="others_raphael_210" title="Raphael 2.1.0">Raphael 2.1.0</li>
+						<li id="others_sammy_063" title="Sammy 0.6.3">Sammy 0.6.3</li>
+						<li id="others_modernizr_262" title="Modernizr 2.6.2">Modernizr 2.6.2</li>
+					</ul>
+     				</li> 
+     				<li><a href="#">其它</a>
+					<ul>
+						<li title="Wind.js 0.7.0" id="wind_070">Wind.js 0.7.0</li>
+						<li class="lib_name">others</li>
+						<li title="zTree 3.4" id="others_ztree_34">zTree 3.4</li>
+						<li title="Backbone 0.9.1" id="others_backbone_091">Backbone 0.9.1</li>
+						<li title="CoffeeScript" id="others_coffeescript">CoffeeScript</li>
+						<li title="Less 1.3.0" id="others_less_130">Less 1.3.0</li>
+						<li title="TwitterLib" id="others_twitterlib">TwitterLib</li>
+						<li title="script.aculo.us 1.8.3" id="others_script_aculo_us_183">script.aculo.us 1.8.3</li>
+						<li title="kinetic-v4.1.2" id="others_kinetic_v412">kinetic-v4.1.2</li>
+						<li title="AngularJS-1.0.3" id="others_angular_103">AngularJS-1.0.3</li>
+					</ul> 
+     				</li> 
+     			</ul> 
+     			<a class="btn btn-small pull-right" href="/loginOut"><i class="icon-off"></i></a>
+     			</div>
+     		</div>
+     		<div id="explorer"> 添加代码</div>
+		<div id="code_show"> 
+			<div class="editor_wrapper">
+				<textarea id=code name=code>
+	<!DOCTYPE html>
+		<html>
+			<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<title>RunCode</title> 
+			<style>
+				button{
+				border:1px solid #ccc;
+				cursor:pointer;
+				display:block;
+				margin:auto;
+				position:relative;
+				top:100px;
+			}
+			</style>
+			</head>
+			<body>
+				<button onclick="javascript:say_hello();">Hello RunCode!</button>
+			</body>
+			<script>
+				function say_hello(){
+					alert("RunCode!");
+				}
+			</script>
+		</html>
+ 		</textarea>
+			<div class="handler handler_vertical"></div> 
+			<iframe id=preview></iframe> 
+			</div>
+		</div>
+  		</section> 
+  	</div>  
+  	<script src="/javascripts/jquery-1.9.1.js"></script>
+  	<script src="/javascripts/jquery.easing.1.3.js"></script>
+	<script src="/javascripts/jquery.notice.js"></script>   
+  	<script src="/javascripts/ui_my.js"></script>
+    <script>
+      var delay;
+      // Initialize CodeMirror editor with a nice html5 canvas demo.
+      var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+        mode: 'text/html',
+        lineNumbers: true,
+        tabMode: 'indent'
+      });
+      editor.on("change", function() {
+        clearTimeout(delay);
+        delay = setTimeout(updatePreview, 300);
+      });
+      editor.setOption("theme", "ambiance");
+      function updatePreview() {
+        var previewFrame = document.getElementById('preview');
+        var preview =  previewFrame.contentDocument ||  previewFrame.contentWindow.document;
+        preview.open();
+        preview.write(editor.getValue());
+        preview.close();
+      }
+      setTimeout(updatePreview, 300);
+    </script> 
+  </body>
+</html>

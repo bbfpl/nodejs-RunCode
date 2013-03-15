@@ -1,0 +1,152 @@
+
+    /************************************************/
+
+	html, body {height: 100%;overflow: hidden;}
+	#wrap {
+	    height: auto !important;
+	    margin: 0 auto -60px;
+	    min-height: 100%;
+	}
+    #wrap h1{color: #fff;position: relative;top: 160px;} 
+    #wrap .login{position: relative;top: 240px;}
+    #wrap .reg{width: 660px;top:200px;position: relative;}
+    .reg-btn{margin-top:5px;}
+    /*reg page*/
+      .form-signin {
+        max-width: 300px;
+        padding: 19px 29px 29px;
+        margin: 0 auto 20px;
+        background-color: rgba(255,255,255,.7);
+        border: 1px solid #e5e5e5;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+           -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+                box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+    /*background*/
+    .bg_ui{    
+	    background: url("../images/bg/dots.png") repeat scroll 0 0 transparent;
+	    left: 0;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 0;
+	    z-index: -2;
+    }
+    .bg_img{opacity: 0.8;width:100%;} 
+/*code */
+
+body.Theme {
+    background-color: #2C3437;
+}
+/*header*/
+#header{
+    height: 48px;
+    top: -48px;
+    min-width: 1000px;
+    position: relative;
+    z-index: 2;
+	-webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+	-moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);
+}
+#header .headerMenu{
+    background:url("../images/bg-black.gif") repeat-x scroll 0 0 transparent;
+    font-size: 14px;
+    height: 33px;
+    line-height: 26px;
+    min-width: 900px;
+    padding: 10px 0 5px 215px;
+}
+
+/*explorer*/
+#explorer {
+    border-top: medium none;
+    height: 100%;
+    overflow: auto;
+    padding-top: 5px;
+    position: absolute;
+    width: 16%;
+    left:-210px;
+	border-right: none; -webkit-box-shadow : 0px 1px 6px rgba( 0, 0, 0, .7);
+	-webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, .7);
+	-moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, .7);
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, .7);
+	background-color: #fff;
+    background-color: rgb(51, 59, 61);
+}
+
+/*code*/
+
+#code_show{ 
+	height: 100%; 
+	width: 82%;
+	opacity: 0;
+	left: 500px;
+	top:500px; 
+	 position: absolute;
+	 z-index: 1;
+}	/*
+	#code_show .editor_wrapper{position:relative;}
+	.editorSet{position: absolute;width:40%;}
+	fieldset.left{left:-5px;}
+	fieldset.right{right:-5px;}
+	#code_show .editor{background:#161A1B;}
+
+	#code_show .html_code{overflow: auto;}
+	#code_show .run_code{}
+    
+      .CodeMirror {  
+		border: medium none;
+		overflow: auto;
+		position: relative;
+      }
+      #preview {
+        width: 100%; 
+        height: 100%;
+        border: medium none;
+        border-left: 0px;
+      }*/
+      .CodeMirror {
+        float: left;
+        width: 49%;
+        border: 1px solid black;
+        background: #161A1B;
+        font-size: 12px;
+      }
+      iframe {
+        width: 49%;
+        float: right;  
+	border: 1px solid rgb(22, 26, 27);
+	-webkit-box-shadow: inset 0 1px 3px rgb(22, 26, 27);
+	-moz-box-shadow: inset 0 1px 3px rgb(22, 26, 27);
+	box-shadow: inset 0 1px 3px rgb(22, 26, 27);
+      }
+/*main_container*/
+.main_container{height: 100%;}
+#code_container{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+ 
+.handler_vertical {
+    background: url("../images/handle-v-b.png") no-repeat scroll 50% 50% transparent;
+    cursor: col-resize; 
+    float:left;
+    width:1%;
+}
+/*tool*/
+.menuItem{float: left;width: 140px;}
+.toolBar{float: left;}
+.toolBar li{float: left;background-color: #343E40;border: 1px solid #1C2426;margin-right: 10px;}
+.toolBar li a{padding:4px 12px;text-align: center;line-height: 20px;font-size:14px;color: #aaa;text-decoration: none;display: inline-block;}
+.toolBar li a:hover{color: #fff;}
+.toolBar li ul{display:none;margin: 0;padding: 0;position: absolute;list-style: none outside none;} 
+.toolBar li ul li{color: #aaa;float: none;padding: 4px 10px;width: 100px;cursor: pointer;} 
+.pull-right{margin-right:10px;}
+
