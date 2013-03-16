@@ -8,19 +8,31 @@
 		$sPwdT_reg=$('#reg_password_t');
  
 	$sRegBtn.bind('click',function(){
-		 $.post("/doReg",{"username":$sUsername_reg.val(),"password":$sPwd_reg.val()},
+		var sUserRegVal=$sUsername_reg.val();
+		var sPwdRegVal=$sPwd_reg.val();
+		var sPwdT=$sPwdT_reg.val();
+		if(!sUserRegVal){jQnotice('用户名不能为空');return false;}
+		if(!sPwdRegVal){jQnotice('密码不能为空');return false;}
+		if(!sPwdT){jQnotice('请再次输入密码');return false;}
+		if(sPwdRegVal != sPwdT){jQnotice('两次密码不一样');return false;}
+		 $.post("/doReg",{"username":sUserRegVal,"password":sPwdRegVal},
 			function(data){
 				if(data.success==1){ 
-					alert(1);
+					jQnotice('注册成功');
+					window.location.href="/";
 				}else{
-					alert(0);
+					jQnotice('注册失败');
 				}
 			});
 		 	return false;
 	});
 	$login_btn.bind('click',function(){ 
+		var sUserVal=$sUsername.val();
+		var sPwdVal=$sPwd.val();
+		if(!sUserVal){jQnotice('用户名不能为空');return false;}
+		if(!sPwdVal){jQnotice('密码不能为空');return false;}
 		 $.post("/doLogin",
-		 	 {"username":$sUsername.val(),"password":$sPwd.val()},
+		 	 {"username":sUserVal,"password":sPwdVal},
 			function(data){
 				if(data.success==1){
 					window.location.href="/code";
@@ -51,6 +63,11 @@
 			},function(){
 				$too_ul.hide();
 			});
+		});
+		$('.login_out').hover(function(){
+			$(this).addClass('btn-danger');
+		},function(){
+			$(this).removeClass('btn-danger');
 		});
 	};
 });

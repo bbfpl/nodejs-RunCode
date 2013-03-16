@@ -147,6 +147,7 @@ body.Theme {
 .toolBar li a{padding:4px 12px;text-align: center;line-height: 20px;font-size:14px;color: #aaa;text-decoration: none;display: inline-block;}
 .toolBar li a:hover{color: #fff;}
 .toolBar li ul{display:none;margin: 0;padding: 0;position: absolute;list-style: none outside none;} 
-.toolBar li ul li{color: #aaa;float: none;padding: 4px 10px;width: 100px;cursor: pointer;} 
+.toolBar li ul li{color: #aaa;float: none;padding: 1px 10px;cursor: pointer;} 
+.toolBar li ul li:hover{color: #fff;} 
 .pull-right{margin-right:10px;}
 
